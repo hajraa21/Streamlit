@@ -112,7 +112,8 @@ if st.button('Submit Quiz'):
 
  # Display score and feedback       
 if st.session_state.quiz_submitted:
-    st.write(f'🎯 You have successfully completed the quiz! Your score is **{score} out of 10**!🥳')
+    st.write('🎯 You have successfully completed the quiz!')
+    st.write(f'# Your score is **{score} out of 10**!🥳')
     
     if score == 10:
         st.balloons()
@@ -126,3 +127,4 @@ if st.session_state.quiz_submitted:
         st.success("Good effort! Keep practicing to improve your score!")
     else:
         st.error("Try again and you'll do better next time!")
+
